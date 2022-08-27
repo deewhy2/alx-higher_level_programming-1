@@ -1,3 +1,8 @@
 #!/usr/bin/python3
-for ch in reversed(range(97, 123)):
-    print("{:c}".format(ch if (ch % 2 == 0) else (ch - 32)), end='')
+i = 122
+while i != 96:
+    n = i
+    if n % 2 == 1:
+        n = ord(chr(n)) - 32
+    print("{}".format(chr(n)), end="")
+    i = i - 1
